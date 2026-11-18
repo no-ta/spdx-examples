@@ -21,5 +21,7 @@ Supplier ---> Receiver
 ```
 
 ## Comments
-There is no property to describe "2.2.1 Document ID" in [Minimum Requirements for Vulnerability Exploitability eXchange (VEX)](https://www.cisa.gov/resources-tools/resources/minimum-requirements-vulnerability-exploitability-exchange-vex) in the current SPDX3.0 specification.
-Therefore, in this sample, "2.2.1 Document ID" is described in property "extesion" in Element class.
+There is no property to describe "2.2.1 Document ID" in [Minimum Requirements for Vulnerability Exploitability eXchange (VEX)](https://www.cisa.gov/resources-tools/resources/minimum-requirements-vulnerability-exploitability-exchange-vex) in the SPDX 3.0.1 specification.
+Therefore, in this sample, "2.2.1 Document ID" is described in property "extension" in Element class, using CdxPropertiesExtension (property "VexDocumentVersion").
+
+These files conform to SPDX 3.0.1 and can be validated with [spdx/tools-java](https://github.com/spdx/tools-java) (e.g. `java -jar tools-java-<version>-jar-with-dependencies.jar Verify <file> JSONLD`).
